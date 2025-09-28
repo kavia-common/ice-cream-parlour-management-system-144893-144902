@@ -1,0 +1,134 @@
+/* Copied from project-level assets/common.css to satisfy CRA import constraints */
+:root{
+  /* Color tokens */
+  --color-fe6f69:#fe6f69;
+  --color-ffffff:#ffffff;
+  --color-dd3128:#dd3128;
+  --color-e53166:#e53166;
+  --color-eb398c:#eb398c;
+  --color-e23888:#e23888;
+  --color-ffd70f:#ffd70f;
+  --color-fcc51e:#fcc51e;
+  --color-000000:#000000;
+  --color-d9d9d9:#d9d9d9;
+  --color-e54841:#e54841;
+  --color-db312d:#db312d;
+  --color-e43264:#e43264;
+  --color-e53265:#e53265;
+  --color-e53264:#e53264;
+  --color-f9c320:#f9c320;
+  --color-f5c021:#f5c021;
+  --color-e44841:#e44841;
+
+  /* Shadow tokens -> will be composed into box-shadow in style classes */
+  --shadow-0: 0px 1.6344585419px 3.4283764362px 0px rgba(0,0,0,1);
+  --shadow-1: 0px 22px 45.0999984741px -18px rgba(0,0,0,1);
+  --shadow-2: 0px 15px 45.7999992371px -14px rgba(0,0,0,1);
+  --shadow-3: 0px 2.7672564983px 2.2138051987px 0px rgba(0,0,0,1);
+  --shadow-4: 0px 6.6501021385px 5.3200817108px 0px rgba(0,0,0,1);
+  --shadow-5: 0px 12.5215520859px 10.017241478px 0px rgba(0,0,0,1);
+  --shadow-6: 0px 22.336309433px 17.8690471649px 0px rgba(0,0,0,1);
+  --shadow-7: 0px 41.7776107788px 33.422088623px 0px rgba(0,0,0,1);
+  --shadow-8: 0px 100px 80px 0px rgba(0,0,0,1);
+  --shadow-9: 0px 36px 66.9000015259px -35px rgba(155,0,72,1);
+  --shadow-10: 0px 14px 84px -45px rgba(139,0,66,1);
+  --shadow-11: 0px 36px 45.9000015259px -20px rgba(172,130,0,1);
+  --shadow-12: 0px 2.7672564983px 13.8362827301px 0px rgba(0,0,0,1);
+  --shadow-13: 0px 6.6501021385px 33.2505111694px 0px rgba(0,0,0,1);
+  --shadow-14: 0px 12.5215520859px 62.6077575684px 0px rgba(0,0,0,1);
+  --shadow-15: 0px 22.336309433px 111.6815414429px 0px rgba(0,0,0,1);
+  --shadow-16: 0px 41.7776107788px 208.8880462646px 0px rgba(0,0,0,1);
+  --shadow-17: 0px 100px 500px 0px rgba(0,0,0,1);
+  --shadow-18: 0px 47px 89.8000030518px -47px rgba(0,0,0,1);
+  --shadow-19: 0px 4px 4px 0px rgba(0,0,0,1);
+  --shadow-20: 0px 27px 28.2000007629px -24px rgba(0,0,0,1);
+  --shadow-21: 0px 24px 33.2000007629px -14px rgba(0,0,0,1);
+  --shadow-22: 0px 28px 30.7000007629px -22px rgba(0,0,0,1);
+  --shadow-23: 0px 46px 45.7999992371px -40px rgba(0,0,0,1);
+
+  /* Typography family */
+  --font-alegreya: "Alegreya Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Reset and base */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+img{display:block;max-width:100%}
+
+/* Typography utility classes based on design system used in this screen */
+.typo-27{font-family:var(--font-alegreya);font-size:28px;font-weight:800;line-height:23.536px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-30{font-family:var(--font-alegreya);font-size:20px;font-weight:800;line-height:24px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-31{font-family:var(--font-alegreya);font-size:88px;font-weight:700;line-height:105.6px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-32{font-family:var(--font-alegreya);font-size:138px;font-weight:900;line-height:165.6px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-33{font-family:var(--font-alegreya);font-size:34px;font-weight:700;line-height:40.8px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-35{font-family:var(--font-alegreya);font-size:28px;font-weight:800;line-height:23.536px;letter-spacing:0.84px;color:var(--color-ffffff);text-align:left}
+.typo-36{font-family:var(--font-alegreya);font-size:138px;font-weight:900;line-height:129px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-37{font-family:var(--font-alegreya);font-size:38px;font-weight:900;line-height:35.52174px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-38{font-family:var(--font-alegreya);font-size:28px;font-weight:700;line-height:32.2px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-39{font-family:var(--font-alegreya);font-size:38px;font-weight:800;line-height:35.52174px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-40{font-family:var(--font-alegreya);font-size:28px;font-weight:800;line-height:32.2px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-41{font-family:var(--font-alegreya);font-size:120px;font-weight:900;line-height:112.1739px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-42{font-family:var(--font-alegreya);font-size:150px;font-weight:900;line-height:140.21739px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-43{font-family:var(--font-alegreya);font-size:58px;font-weight:900;line-height:54.21739px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-44{font-family:var(--font-alegreya);font-size:48px;font-weight:900;line-height:44.86957px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-47{font-family:var(--font-alegreya);font-size:38px;font-weight:900;line-height:35.52174px;letter-spacing:0px;color:var(--color-fe6f69);text-align:left}
+.typo-49{font-family:var(--font-alegreya);font-size:28px;font-weight:500;line-height:23.53623px;letter-spacing:0.84px;color:var(--color-ffffff);text-align:left}
+.typo-50{font-family:var(--font-alegreya);font-size:24px;font-weight:700;line-height:26.88px;letter-spacing:0.72px;color:var(--color-ffffff);text-align:left}
+.typo-51{font-family:var(--font-alegreya);font-size:28px;font-weight:800;line-height:31.36px;letter-spacing:0.84px;color:var(--color-ffffff);text-align:left}
+.typo-52{font-family:var(--font-alegreya);font-size:18px;font-weight:800;line-height:20.16px;letter-spacing:0.54px;color:var(--color-000000);text-align:left}
+.typo-53{font-family:var(--font-alegreya);font-size:28px;font-weight:900;line-height:33.6px;letter-spacing:0px;color:var(--color-ffffff);text-align:center}
+.typo-54{font-family:var(--font-alegreya);font-size:38px;font-weight:800;line-height:35.52174px;letter-spacing:0px;color:var(--color-ffffff);text-align:center}
+.typo-55{font-family:var(--font-alegreya);font-size:27px;font-weight:700;line-height:25.23913px;letter-spacing:0px;color:var(--color-ffffff);text-align:left}
+.typo-56{font-family:var(--font-alegreya);font-size:18px;font-weight:800;line-height:20.16px;letter-spacing:0.54px;color:var(--color-000000);text-align:left}
+
+/* Style classes for background/border/radius/opacity/shadows used */
+.style-1{border:6px solid var(--color-ffffff)}
+.style-2{background:var(--color-ffffff)}
+.style-17{border:3px solid var(--color-ffffff)}
+.style-23{background:var(--color-000000)}
+.style-29{border:2px solid var(--color-ffffff)}
+.style-30{border:5px solid var(--color-db312d);border-radius:5px}
+.style-31{border:5px solid var(--color-e43264);border-radius:5px}
+.style-32{border:4px solid var(--color-db312d);border-radius:3px}
+.style-33{border:4px solid var(--color-e43264);border-radius:3px}
+.style-34{background:var(--color-e53265);border-radius:81px}
+.style-35{background:var(--color-e53265)}
+.style-36{background:var(--color-ffffff);border-radius:4px}
+.style-37{background:var(--color-db312d)}
+.style-38{background:var(--color-e53264)}
+.style-39{border:3px solid var(--color-ffffff);border-radius:6px}
+.style-40{border-radius:31px}
+.style-41{background:var(--color-e53264);border-radius:31px}
+.style-42{background:var(--color-f9c320);border-radius:31px}
+.style-43{background:var(--color-ffffff);border-radius:31px}
+.style-44{background:var(--color-f9c320);border-radius:47px}
+.style-45{background:var(--color-f5c021);border-radius:10px}
+.style-46{opacity:0.75}
+.style-47{background:var(--color-ffffff);border-radius:76px}
+.style-48{background:var(--color-fe6f69);border-radius:22px}
+.style-49{background:var(--color-e44841)}
+.style-50{border:5px solid var(--color-ffffff);border-radius:21px}
+.style-51{background:var(--color-d9d9d9)}
+.style-54{box-shadow:var(--shadow-0)}
+.style-57{box-shadow:var(--shadow-3),var(--shadow-4),var(--shadow-5),var(--shadow-6),var(--shadow-7),var(--shadow-8)}
+.style-61{box-shadow:var(--shadow-12),var(--shadow-13),var(--shadow-14),var(--shadow-15),var(--shadow-16),var(--shadow-17)}
+.style-65{background:var(--color-fe6f69);border-radius:14px;box-shadow:var(--shadow-19)}
+.style-66{background:var(--color-e53265);border-radius:81px;box-shadow:var(--shadow-20)}
+.style-67{background:var(--color-e53265);box-shadow:var(--shadow-21)}
+.style-68{background:var(--color-e53264);box-shadow:var(--shadow-22)}
+.style-69{background:var(--color-e53264);border-radius:31px;box-shadow:var(--shadow-23)}
+.style-70{background:var(--color-f9c320);border-radius:31px;box-shadow:var(--shadow-23)}
+.style-71{background:var(--color-ffffff);border-radius:31px;box-shadow:var(--shadow-23)}
+
+/* Absolute positioning helper */
+.abs{position:absolute;}
+
+/* Root artboard container */
+.artboard{
+  position:relative;
+  width:1728px;
+  height:1117px;
+  background:var(--color-ffffff);
+  overflow:visible;
+  font-family:var(--font-alegreya);
+}
